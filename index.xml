@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leon Morten Richter</title>
-    <link>https://m0r13n.github.io/</link>
+    <link>https://leonmortenrichter.de/</link>
     <description>Recent content on Leon Morten Richter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://m0r13n.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leonmortenrichter.de/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://m0r13n.github.io/projects/</link>
+      <link>https://leonmortenrichter.de/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m0r13n.github.io/projects/</guid>
+      <guid>https://leonmortenrichter.de/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://m0r13n.github.io/about/</link>
+      <link>https://leonmortenrichter.de/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m0r13n.github.io/about/</guid>
+      <guid>https://leonmortenrichter.de/about/</guid>
       <description>Hi my name is Leon and I&amp;rsquo;m currently studying computer science at the Christian-Albrechts-University in Kiel, Germany. I have a strong preference for coding in Python and I am mainly interested in data analysis and prototyping.
 Since my early childhood I am fascinated by computers and how they work. So it comes to no surprise that my best friend and me got to &amp;lsquo;modify&amp;rsquo; video games when we were still in fifth grade.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://m0r13n.github.io/contact/</link>
+      <link>https://leonmortenrichter.de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m0r13n.github.io/contact/</guid>
+      <guid>https://leonmortenrichter.de/contact/</guid>
       <description>Contact me under, &amp;lsquo;leon.morten@gmail.com&amp;rsquo;.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://m0r13n.github.io/projects/</link>
+      <link>https://leonmortenrichter.de/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m0r13n.github.io/projects/</guid>
+      <guid>https://leonmortenrichter.de/projects/</guid>
       <description>Inventory management System I build a fully operational inventory management system for my former employer. Written in Python using Flask it supports eight distributed shops in managing:
  replacement parts rental smartphones orders customer data  Papershift Integration for Slack Because we were using Slack for general communication and Papershift to organize work schedules quite extensivly I wrote a handy bot that could tell us about scheduled work schifts. You can find the repository here</description>
     </item>
