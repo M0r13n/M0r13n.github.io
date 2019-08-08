@@ -3,29 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://leonmortenrichter.de/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leonmortenrichter.de/categories/</loc>
+    <loc>https://M0r13n.github.io/projects/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://leonmortenrichter.de/contact/</loc>
+    <loc>https://M0r13n.github.io/about/</loc>
   </url>
   
   <url>
-    <loc>https://leonmortenrichter.de/</loc>
+    <loc>https://M0r13n.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://leonmortenrichter.de/projects/</loc>
+    <loc>https://M0r13n.github.io/contact/</loc>
   </url>
   
   <url>
-    <loc>https://leonmortenrichter.de/tags/</loc>
+    <loc>https://M0r13n.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://M0r13n.github.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://M0r13n.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
