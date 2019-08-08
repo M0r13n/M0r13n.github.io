@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leon Morten Richter</title>
-    <link>https://M0r13n.github.io/</link>
+    <link>https://leonmortenrichter.de/</link>
     <description>Recent content on Leon Morten Richter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://M0r13n.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leonmortenrichter.de/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://M0r13n.github.io/projects/</link>
+      <link>https://leonmortenrichter.de/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://M0r13n.github.io/projects/</guid>
+      <guid>https://leonmortenrichter.de/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://M0r13n.github.io/about/</link>
+      <link>https://leonmortenrichter.de/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://M0r13n.github.io/about/</guid>
+      <guid>https://leonmortenrichter.de/about/</guid>
       <description>Hi my name is Leon and I&amp;rsquo;m currently studying computer science at the Christian-Albrechts-University in Kiel, Germany. I have a strong preference for coding in Python and am mainly interested in Backend development and prototyping. I love clean, well structured and simple code and enjoy the aesthetics of such solutions for complex problems. I&amp;rsquo;m familiar with most of today&amp;rsquo;s technologies down to the protocol level.
 I would describe myself as a Backend Developer, because everything Frontend related doesn&amp;rsquo;t really catch my attention (even though I know about plain HMTL/CSS/JS).</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://M0r13n.github.io/contact/</link>
+      <link>https://leonmortenrichter.de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://M0r13n.github.io/contact/</guid>
+      <guid>https://leonmortenrichter.de/contact/</guid>
       <description>Let&amp;rsquo;s have a chat. Email me.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://M0r13n.github.io/projects/</link>
+      <link>https://leonmortenrichter.de/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://M0r13n.github.io/projects/</guid>
+      <guid>https://leonmortenrichter.de/projects/</guid>
       <description>PricePicker This project aims to provide a simple yet good-looking price overview for repairshops that offer various kinds of services around Smartphones and Tablets.
 Technologies used:
  Flask Docker Redis Postgres  Socket Chess A basic chess game based on Websockets.
