@@ -449,7 +449,11 @@ canvas {
 }
 
 body {
-    background-color: #F0F4FC;;
+    background-color: #F0F4FC;
+}
+
+main {
+    margin-top: 10rem;
 }
 
 input,
@@ -467,4 +471,40 @@ hr {
 
 p {
     font-size: 1.1rem;
+}
+
+
+/* Bouncing Arrow*/
+.arrows {
+	width: 80px;
+	height: 80px;
+    display: block;
+    margin-left: 48%;
+}
+
+.arrows path {
+	stroke:var(--color-secondary);
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0; transform:translateY(10px)}
+80% {opacity:1; transform:translateY(50px)}
+100% {opacity:0; transform:translateY(50px)}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0; transform:translateY(10px)}
+80% {opacity:1; transform:translateY(50px)}
+100% {opacity:0; transform:translateY(50px)}
+}
+
+.arrows path.a1 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari and Chrome */
 }
