@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", function () {
   let form = document.getElementById("contactform");
   let button = document.getElementById("submitBtn");
   let status = document.getElementById("my-form-status");
+  const URL = "https://formspree.io/mlewwqog";
 
   // Success and Error functions for after the form is submitted
   function success() {
@@ -20,7 +21,8 @@ window.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
     var data = new FormData(form);
-    ajax(form.method, form.action, data, success, error);
+    ajax('POST', URL, data, success, error);
+    return false;
   });
 });
 

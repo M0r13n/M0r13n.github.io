@@ -28,24 +28,24 @@
 
 <body>
     <canvas id="c"></canvas>
-    <header>
-        <nav>
-            <a href="/">Leon Morten Richter</a>
-            <ul>
-                <li><a href="https://github.com/M0r13n/M0r13n.github.io" target="_blank" rel="noopener">GitHub
-                        &nearr;</a></li>
-            </ul>
-        </nav>
-        <img alt="Avatar" src="./avatar.jpg" height="150" id="avatar">
-        <h1>Leon Morten Richter</h1>
-        <p>I love writing code and building cool stuff. <mark>Heavy Pythonista.</mark></p>
-    </header>
-    <main>
+    <div id="head">
         <header>
-            <svg class="arrows">
-                <path stroke-linecap="round" class="a1" d="M0 0 L20 22 L40 0"></path>
-            </svg>
+            <nav>
+                <a href="/">Leon Morten Richter</a>
+                <ul>
+                    <li><a href="https://github.com/M0r13n/M0r13n.github.io" target="_blank" rel="noopener">GitHub
+                            &nearr;</a></li>
+                </ul>
+            </nav>
+            <img alt="Avatar" src="./avatar.jpg" height="150" id="avatar">
+            <h1>Leon Morten Richter</h1>
+            <p>I love writing code and building cool stuff. <mark>Heavy Pythonista.</mark></p>
         </header>
+        <svg class="arrows">
+            <path stroke-linecap="round" class="a1" d="M0 0 L20 22 L40 0"></path>
+        </svg>
+    </div>
+    <main>
         <section>
             <header>
                 <h2>About</h2>
@@ -153,7 +153,7 @@
                 <h2>Lets have a chat!</h2>
                 <p>It'll be great &darr;</p>
             </header>
-            <form id="contactform" action="https://formspree.io/mlewwqog" method="POST">
+            <form id="contactform" action="javascript:void(0);" method="POST">
                 <label for="name">Your name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -176,8 +176,8 @@
         <hr>
         <header> Made with ♥ in Kiel</header>
     </footer>
-    <script async defer src="snake.js"></script>
-    <script async defer src="main.js"></script>
+    <script src="snake.js"></script>
+    <script src="main.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 

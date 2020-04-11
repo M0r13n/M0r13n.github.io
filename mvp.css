@@ -444,16 +444,14 @@ canvas {
     z-index: -1;
 }
 
-#avatar {
-    border-radius: 50%;
-}
 
 body {
     background-color: #F0F4FC;
 }
 
-main {
-    margin-top: 10rem;
+
+#avatar {
+    border-radius: 50%;
 }
 
 input,
@@ -464,7 +462,6 @@ textarea {
     width: 100%;
 }
 
-
 hr {
     margin: 7rem 0;
 }
@@ -473,38 +470,67 @@ p {
     font-size: 1.1rem;
 }
 
+#head {
+    height:100vh;
+}
+
 
 /* Bouncing Arrow*/
 .arrows {
-	width: 80px;
-	height: 80px;
-    display: block;
-    margin-left: 48%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:70%;
+    left:48%;
 }
 
 .arrows path {
-	stroke:var(--color-secondary);
-	fill: transparent;
-	stroke-width: 3px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+    stroke: var(--color-secondary);
+    fill: transparent;
+    stroke-width: 3px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0; transform:translateY(10px)}
-80% {opacity:1; transform:translateY(50px)}
-100% {opacity:0; transform:translateY(50px)}
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(50px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px)
+    }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0; transform:translateY(10px)}
-80% {opacity:1; transform:translateY(50px)}
-100% {opacity:0; transform:translateY(50px)}
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(50px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px)
+    }
 }
 
 .arrows path.a1 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari and Chrome */
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari and Chrome */
 }
