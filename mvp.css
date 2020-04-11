@@ -471,7 +471,8 @@ p {
 }
 
 #head {
-    height:100vh;
+    min-height: 600px;
+    height: 100vh;
 }
 
 
@@ -479,9 +480,10 @@ p {
 .arrows {
     width: 80px;
     height: 80px;
-    position: absolute;
-    top:70%;
-    left:48%;
+    display: block;
+    margin: auto;
+    padding-left: 40px;
+
 }
 
 .arrows path {
