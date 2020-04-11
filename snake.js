@@ -3,31 +3,31 @@ var w = c.width = window.innerWidth,
     ctx = c.getContext('2d'),
 
     opts = {
-        count: 100,
+        count: 150,
         variation: 1.7,
-        baseLife: 1500,
-        addedLife: 500,
+        baseLife: 1750,
+        addedLife: 600,
 
         cx: w / 2,
         cy: h / 2,
 
-        bgR: 240,
+        bgR: 241,
         bgG: 244,
-        bgB: 252,
+        bgB: 251,
 
         repaintAlpha: .5,
 
         fps: 25,
 
         saturation: "50%",
-        lightness: "75%",
+        lightness: "80%",
 
-        fixedColorHue: 200,
+        fixedColorHue: 220,
 
         sizeGain: 1.5,
 
         positionHorizontal: 'left',
-        positionVertical: 'center',
+        positionVertical: 'top',
 
     },
 
