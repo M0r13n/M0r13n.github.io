@@ -11,9 +11,9 @@ var w = c.width = window.innerWidth,
         cx: w / 2,
         cy: h / 2,
 
-        bgR: 241,
-        bgG: 244,
-        bgB: 251,
+        bgR: 250,
+        bgG: 250,
+        bgB: 250,
 
         repaintAlpha: .5,
 
