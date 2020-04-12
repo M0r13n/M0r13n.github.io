@@ -1,4 +1,4 @@
-var w = c.width = window.innerWidth,
+let w = c.width = window.innerWidth,
     h = c.height = window.innerHeight * 2,
     ctx = c.getContext('2d'),
 
@@ -28,7 +28,17 @@ var w = c.width = window.innerWidth,
 
         positionHorizontal: 'left',
         positionVertical: 'top',
+    },
 
+    dark = {
+        r: 0x30,
+        g: 0x30,
+        b: 0x30
+    },
+    light = {
+        r: 0xfa,
+        g: 0xfa,
+        b: 0xfa
     },
 
     snakes = [],
@@ -42,30 +52,17 @@ function switchTheme(e) {
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
     }
-    setColor();
+    setColor(e.target.checked);
 }
 
-function setColor() {
-    backgroundColor = getRGBA(getComputedStyle(document.body).backgroundColor);
-    opts.bgR = backgroundColor.r;
-    opts.bgG = backgroundColor.g;
-    opts.bgB = backgroundColor.b;
+function setColor(darkMode) {
+    const mode = darkMode ? dark : light;
+    console.log(darkMode, mode);
+    opts.bgR = mode.r;
+    opts.bgG = mode.g;
+    opts.bgB = mode.b;
 }
 
-function getRGBA(colorStr) {
-    colorStr = colorStr.slice(colorStr.indexOf('(') + 1, colorStr.indexOf(')'));
-    let colorArr = colorStr.split(','),
-        i = colorArr.length;
-    while (i--) {
-        colorArr[i] = parseInt(colorArr[i], 10);
-    }
-    return {
-        r: colorArr[0],
-        g: colorArr[1],
-        b: colorArr[2],
-        a: colorArr[3]
-    }
-}
 
 function resize() {
     w = c.width = window.innerWidth,

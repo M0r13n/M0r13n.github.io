@@ -454,6 +454,7 @@ canvas {
 
 
 body {
+    background: var(--color-bg);
     background-color: var(--color-bg);
     padding: 0;
 }
