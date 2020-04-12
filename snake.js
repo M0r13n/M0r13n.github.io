@@ -1,6 +1,7 @@
 var w = c.width = window.innerWidth,
     h = c.height = window.innerHeight * 2,
     ctx = c.getContext('2d'),
+    backgroundColor = getRGBA(getComputedStyle(document.body).backgroundColor),
 
     opts = {
         count: 150,
@@ -11,9 +12,9 @@ var w = c.width = window.innerWidth,
         cx: w / 2,
         cy: h / 2,
 
-        bgR: 250,
-        bgG: 250,
-        bgB: 250,
+        bgR: backgroundColor.r,
+        bgG: backgroundColor.g,
+        bgB: backgroundColor.b,
 
         repaintAlpha: .5,
 
@@ -34,6 +35,22 @@ var w = c.width = window.innerWidth,
     snakes = [],
     tick = (Math.random() * 360) | 0,
     first = true;
+
+
+function getRGBA(colorStr) {
+    colorStr = colorStr.slice(colorStr.indexOf('(') + 1, colorStr.indexOf(')'));
+    let colorArr = colorStr.split(','),
+        i = colorArr.length;
+    while (i--) {
+        colorArr[i] = parseInt(colorArr[i], 10);
+    }
+    return {
+        r: colorArr[0],
+        g: colorArr[1],
+        b: colorArr[2],
+        a: colorArr[3]
+    }
+}
 
 function resize() {
     w = c.width = window.innerWidth,
