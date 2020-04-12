@@ -1,29 +1,26 @@
-window.addEventListener("DOMContentLoaded", function () {
+// get the form elements defined in your form HTML above
+let form = document.getElementById("contactform");
+let button = document.getElementById("submitBtn");
+let status = document.getElementById("my-form-status");
+const URL = "https://formspree.io/mlewwqog";
 
-  // get the form elements defined in your form HTML above
-  let form = document.getElementById("contactform");
-  let button = document.getElementById("submitBtn");
-  let status = document.getElementById("my-form-status");
-  const URL = "https://formspree.io/mlewwqog";
+// Success and Error functions for after the form is submitted
+function success() {
+  form.reset();
+  button.style = "display: none ";
+  status.innerHTML = "Thanks!";
+}
 
-  // Success and Error functions for after the form is submitted
-  function success() {
-    form.reset();
-    button.style = "display: none ";
-    status.innerHTML = "Thanks!";
-  }
+function error() {
+  status.innerHTML = "Oops! There was a problem.";
+}
 
-  function error() {
-    status.innerHTML = "Oops! There was a problem.";
-  }
-
-  // handle the form submission event
-  form.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var data = new FormData(form);
-    ajax('POST', URL, data, success, error);
-    return false;
-  });
+// handle the form submission event
+form.addEventListener("submit", function (ev) {
+  ev.preventDefault();
+  var data = new FormData(form);
+  ajax('POST', URL, data, success, error);
+  return false;
 });
 
 // helper function for sending an AJAX request
