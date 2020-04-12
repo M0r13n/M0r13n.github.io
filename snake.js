@@ -1,7 +1,6 @@
 var w = c.width = window.innerWidth,
     h = c.height = window.innerHeight * 2,
     ctx = c.getContext('2d'),
-    backgroundColor = getRGBA(getComputedStyle(document.body).backgroundColor),
 
     opts = {
         count: 150,
@@ -12,9 +11,9 @@ var w = c.width = window.innerWidth,
         cx: w / 2,
         cy: h / 2,
 
-        bgR: backgroundColor.r,
-        bgG: backgroundColor.g,
-        bgB: backgroundColor.b,
+        bgR: 250, // default
+        bgG: 250, // default
+        bgB: 250, // default
 
         repaintAlpha: .5,
 
@@ -34,8 +33,24 @@ var w = c.width = window.innerWidth,
 
     snakes = [],
     tick = (Math.random() * 360) | 0,
-    first = true;
+    first = true,
+    toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    setColor();
+}
+
+function setColor() {
+    backgroundColor = getRGBA(getComputedStyle(document.body).backgroundColor);
+    opts.bgR = backgroundColor.r;
+    opts.bgG = backgroundColor.g;
+    opts.bgB = backgroundColor.b;
+}
 
 function getRGBA(colorStr) {
     colorStr = colorStr.slice(colorStr.indexOf('(') + 1, colorStr.indexOf(')'));
@@ -67,8 +82,6 @@ function resize() {
     }, 3);
 }
 
-window.onresize = resize;
-
 
 function moveCenter() {
     if (opts.positionHorizontal == "left") {
@@ -92,7 +105,7 @@ function moveCenter() {
 }
 
 function init() {
-
+    setColor();
     snakes.length = 0;
     ctx.fillStyle = `rgb(${opts.bgR}, ${opts.bgG}, ${opts.bgB})`;
     ctx.fillRect(0, 0, w, h);
@@ -187,4 +200,6 @@ Snake.prototype.render = function () {
     ctx.fill();
 }
 
+toggleSwitch.addEventListener('change', switchTheme, false);
+window.onresize = resize;
 init();

@@ -33,20 +33,18 @@
     color: #6AE9F8;
 }
 
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color: #0097fc;
-        --color-accent: #6AE9A0;
-        --color-bg: #333;
-        --color-bg-secondary: #555;
-        --color-secondary: #F23969;
-        --color-secondary-accent: #e20de94f;
-        --color-shadow: #bbbbbb20;
-        --color-text: #f7f7f7;
-        --color-text-secondary: #aaa;
-    }
+html[data-theme='dark'] {
+    --color: #0097fc;
+    --color-accent: #6AE9A0;
+    --color-bg: #333;
+    --color-bg-secondary: #555;
+    --color-secondary: #F23969;
+    --color-secondary-accent: #e20de94f;
+    --color-shadow: #bbbbbb20;
+    --color-text: #f7f7f7;
+    --color-text-secondary: #aaa;
 }
+
 
 
 /* Layout */
@@ -548,4 +546,60 @@ p {
     animation-delay: -0.5s;
     -webkit-animation-delay: -0.5s;
     /* Safari and Chrome */
+}
+
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    width: 48px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: var(--color-bg-secondary);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 21px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 21px;
+}
+
+input:checked+.slider {
+    background-color: var(--color-secondary);
+}
+
+input:checked+.slider:before {
+    transform: translateX(21px);
+}
+
+.slider.round {
+    border-radius: 28px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
