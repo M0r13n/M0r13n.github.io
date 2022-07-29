@@ -38,3 +38,14 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+toggleSwitch.addEventListener('change', switchTheme, false);
