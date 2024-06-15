@@ -38,58 +38,40 @@
 </head>
 
 <body>
-    <canvas id="c"></canvas>
-    <div id="head">
-        <header>
-            <nav>
-                <a href="/">Leon Morten Richter</a>
-                <ul>
-                    <li>
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
-                                <div class="slider round"></div>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <img alt="Avatar of the owner of the website" src="./avatar.jpg" height="150" id="avatar">
-            <h1>Leon Morten Richter</h1>
-            <p>Hi, I'm Leon — <b>DevOps Engineer specializing in application scalability and performance</b>.</p>
-            <h2>DevOps Engineer</h2>
-            <section>
-                <!--Icon source: https://tabler-icons.io/-->
-                <a rel="noopener" target="_blank" href="https://github.com/M0r13n">
-                    <img alt="github link icon" src="icons/github.svg" height="80">
-                </a>
-
-                <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/leon-morten-richter-425b211b3">
-                    <img alt="linkedin link icon" src="icons/linkedin.svg" height="80">
-                </a>
-
-                <a href="./lmr.vcf" download="leon.vcf">
-                    <img alt="vcard link icon" src="icons/address-book.svg" height="80">
-                </a>
-
-                <a rel="noopener me" target="_blank" href="./cv.pdf">
-                    <img alt="cv link icon" src="icons/file-cv.png" height="80">
-                </a>
-            </section>
-        </header>
-        <svg class="arrows">
-            <path stroke-linecap="round" class="a1" d="M0 0 L20 22 L40 0"></path>
-        </svg>
-    </div>
     <main>
         <section>
             <header>
-                <h2>About Me</h2>
+                <h2>Leon Morten Richter</h2>
+                <p>DevOps Engineer specializing in application scalability and performance.</p>
             </header>
+            <aside>
+                <h3>Professional Experience</h3>
+                <p>I have extensive experience in hydroacoustic systems for naval and commercial applications. I have
+                    deep expertise in the Linux stack, containerization, software engineering, and managing highly
+                    available systems.</p>
+            </aside>
+            <aside>
+                <h3>Professional Interests</h3>
+                <p>I'm passionate about building robust, scalable, and simple systems. I believe in Infrastructure as
+                    Code and the importance of mastering fundamentals. With experience in open source contributions, I'm
+                    driven by efficiency, automation, and performance.</p>
+            </aside>
+            <aside>
+                <h3>Personal Philosophy</h3>
+                <p>I embrace a stoic and inquisitive mindset, value meaningful discussions, and appreciate design and
+                    art. I practice meditation and find inspiration in nature. I prefer authentic connections over
+                    social media interactions.</p>
+            </aside>
+        </section>
 
-            <p>As a DevOps Engineer, I have accumulated several years of experience in hydroacoustic systems for both
+        <article>
+
+            <p>As a DevOps Engineer, I have accumulated several years of experience in hydroacoustic
+                systems for
+                both
                 naval and commercial applications. My primary programming language is Python; however, I have also
-                successfully worked with various other languages, including C, C++, Java, JavaScript, and Go. Throughout
+                successfully worked with various other languages, including C, C++, Java, JavaScript, and Go.
+                Throughout
                 my career, I have developed expertise across the entire Linux stack, ranging from the Kernel and
                 networking to containerization and applications. I possess practical knowledge in managing highly
                 available systems and have actively participated in open source software projects.</p>
@@ -122,41 +104,38 @@
                 life. While remnants of my previous social media profiles may still exist, they remain abandoned. My
                 focus now lies in fostering meaningful dialogues with real people in authentic settings. If you wish to
                 connect with me, the most effective means of reaching out are through email, the contact form, or the
-                Signal messenger (<a href="./lmr.vcf">Download vCard</a>).
+                Signal messenger.
             </p>
 
-        </section>
+        </article>
 
-        <hr>
-        <section id="contact">
-            <header>
-                <h2>Lets have a chat!</h2>
-                <p>It'll be great &darr;</p>
-            </header>
-            <form id="contactform" action="javascript:void(0);" method="POST">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <article>
+            <h2>Public Key Information</h2>
+            To securely communicate and verify my identity, here are my public GPG and PGP keys:
 
-                <label for="_replyto">Your E-Mail</label>
-                <input type="email" id="_replyto" name="_replyto" placeholder="Your Mail" required>
-
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="What's up?">
-
-                <label for="text">Text</label>
-                <textarea name="text" id="text" form="contactform" rows="8" placeholder="Text here..."></textarea>
-                <header>
-                    <button type="submit" id="submitBtn">Submit</button>
-                    <p><b id="my-form-status"></b></p>
-                </header>
-            </form>
-        </section>
+            <ul>
+                <li><a href="./pgp.txt" rel="noopener" target="_blank">PGP Public Key</a></li>
+                <li><a href="./gpg.txt" rel="noopener" target="_blank">GPG Public Key</a></li>
+            </ul>
+        </article>
     </main>
     <footer>
         <hr>
-        <header> Made with ♥ in Kiel</header>
+        <header>
+            <!--Icon source: https://tabler-icons.io/-->
+            <a rel="noopener" target="_blank" href="https://github.com/M0r13n">
+                <img alt="github link icon" src="icons/github.svg" height="50">
+            </a>
+
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/leon-morten-richter-425b211b3">
+                <img alt="linkedin link icon" src="icons/linkedin.svg" height="50">
+            </a>
+
+            <a rel="noopener me" target="_blank" href="./cv.pdf">
+                <img alt="cv link icon" src="icons/file-cv.png" height="50">
+            </a>
+        </header>
     </footer>
-    <script async defer src="main.js"></script>
 </body>
 
 </html>
